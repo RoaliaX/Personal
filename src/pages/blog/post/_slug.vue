@@ -51,7 +51,7 @@
             style="background-color: #151a21; width: 125px"
             class="rounded-md p-2 px-3 flex items-center justify-between"
           >
-            <p><i class="far fa-clock"></i> {{ date(post.createdAt) }}</p>
+            <p><i class="far fa-clock"></i> {{ date(post.created) }}</p>
           </div>
         </div>
         <div class="divide-y divide-gray-500">
