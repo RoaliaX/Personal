@@ -1,7 +1,7 @@
 ---
 title: Blog Açıldı.
 description: Uğraşlarım sonucunda kendi kişisel websitemi ve blog sistemini aktif hale getirdim.
-createdAt: 2020-07-04T22:33:9.000Z
+created: 2020-07-04T22:33:9.000Z
 read: 30
 timer: sec
 ---
