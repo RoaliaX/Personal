@@ -1,0 +1,28 @@
+{
+  "name": "Roxza",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "@nuxtjs/firebase": "^7.6.1",
+    "autoprefixer": "^10.2.6",
+    "core-js": "^3.15.1",
+    "firebase": "^8.7.0",
+    "moment": "^2.29.1",
+    "nuxt": "^2.15.7",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4",
+    "vue-disqus": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "nuxt-windicss": "^1.1.1",
+    "prettier": "^2.3.2"
+  }
+}
