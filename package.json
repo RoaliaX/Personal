@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@eggsydev/vue-lanyard": "^1.1.2",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/firebase": "^7.6.1",
     "autoprefixer": "^10.2.6",

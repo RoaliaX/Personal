@@ -1,5 +1,97 @@
 <template>
   <div>
+    <div v-if="type === 'status'">
+      <div
+        class="
+          space-y-4
+          overflow-x-hidden
+          flex flex-col
+          p-4
+          bg-gray-100 bg-opacity-20
+          shadow-lg
+          rounded-lg
+        "
+        style="background-color: #151a21"
+      >
+        <div class="flex items-center space-x-4">
+          <div class="flex-shrink-0 relative">
+            <div
+              style="height: 128px; width: 128px"
+              class="
+                rounded-md
+                float-left
+                p-8
+                bg-gray-500
+                animate-pulse
+                dark:bg-gray-700
+              "
+            />
+          </div>
+          <div class="overflow-x-hidden truncate space-y-px">
+            <h1 class="font-semibold leading-tight text-lg truncate">
+              <div
+                class="
+                  rounded-md
+                  bg-gray-500
+                  h-5
+                  animate-pulse
+                  w-45
+                  dark:bg-gray-700
+                "
+              />
+            </h1>
+            <h2 class="opacity-90 leading-tight line-clamp-2">
+              <div
+                class="
+                  rounded-md
+                  bg-gray-500
+                  h-5
+                  animate-pulse
+                  w-38
+                  dark:bg-gray-700
+                "
+              />
+            </h2>
+            <h2 class="opacity-90 leading-tight line-clamp-2">
+              <div
+                class="
+                  rounded-md
+                  bg-gray-500
+                  h-5
+                  animate-pulse
+                  w-59
+                  dark:bg-gray-700
+                "
+              />
+            </h2>
+            <span class="opacity-90 leading-tight truncate">
+              <div
+                class="
+                  rounded-md
+                  bg-gray-500
+                  h-5
+                  animate-pulse
+                  w-19
+                  dark:bg-gray-700
+                "
+            /></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-if="type === 'avatar'">
+      <div
+        style="height: 128px; width: 128px"
+        class="
+          rounded-full
+          float-left
+          p-8
+          bg-gray-500
+          animate-pulse
+          dark:bg-gray-700
+        "
+      />
+    </div>
     <div v-if="type === 'blog'">
       <div
         style="background-color: #151a21; word-break: break-word"
@@ -143,13 +235,13 @@
 </template>
 
 <script>
-import Vue from 'vue'
+import Vue from "vue";
 export default Vue.extend({
   props: {
     type: {
       type: String,
       required: false,
-      default: 'block',
+      default: "block",
     },
     iframeUrl: {
       type: String,
@@ -160,7 +252,7 @@ export default Vue.extend({
   data() {
     return {
       itemLoaded: false,
-    }
+    };
   },
-})
+});
 </script>

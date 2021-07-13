@@ -27,11 +27,11 @@
 
 <script>
 export default {
-  name: 'About',
+  name: "About",
   head() {
     return {
-      title: 'About | Roxza',
-    }
+      title: "About | Roxza",
+    };
   },
-}
+};
 </script>
