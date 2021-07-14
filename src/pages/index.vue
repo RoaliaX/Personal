@@ -47,7 +47,6 @@
       <div class="p-8">
         <br />
         <CardSpotify
-          class="align-center"
           :details="activities.details"
           :id="activities.id"
           :sync_id="activities.sync_id"
