@@ -28,7 +28,6 @@
 
     <template v-if="activities.type == 0">
       <div class="p-8">
-        <h1 class="text-2xl">Visualizer</h1>
         <br />
         <CardVisualizer
           :name="activities.name"
@@ -46,9 +45,9 @@
     </template>
     <template v-else-if="activities.type == 2">
       <div class="p-8">
-        <h1 class="text-2xl">Visualizer</h1>
         <br />
         <CardSpotify
+          class="align-center"
           :details="activities.details"
           :id="activities.id"
           :sync_id="activities.sync_id"
